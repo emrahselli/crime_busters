@@ -1,4 +1,4 @@
-ward_no           ,Areaname           ,crime_type,arrest               ,year                ,crime_location,latitude          ,longitude         
+ward_no,Areaname,crime_type,arrest,year,crime_location,latitude,longitude
 1.0,Rogers Park,BURGLARY,f,2015,APARTMENT,41.89573331,-87.68745748
 1.0,Rogers Park,DECEPTIVE PRACTICE,f,2015,OTHER,41.90909834,-87.66880706
 1.0,Rogers Park,OTHER OFFENSE,f,2015,WAREHOUSE,41.90450135,-87.6682633
