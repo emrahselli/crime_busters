@@ -5,14 +5,14 @@ html, body {
   }
   #map {
     float: left;
-    height: 425px;
-    width: 79%;
+    height: 530px;
+    width: 70%;
   }
-  #content-window {
+  #capture {
     float: left;
     font-family: 'Roboto','sans-serif';
     height: 100%;
-    line-height: 30px;
+    line-height: 17px;
     padding-left: 10px;
-    width: 19%;
+    width: 15%;
   }

@@ -5,7 +5,7 @@ function initMap() {
     });
   
     var kmlLayer = new google.maps.KmlLayer({
-      url: '/../../db/crimechicago.kml',
+      url: 'https://raw.githubusercontent.com/hmakinde/map_stuff/master/crimechicago.kml',
       suppressInfoWindows: true,
       map: map
     });
@@ -15,8 +15,8 @@ function initMap() {
       showInContentWindow(text);
     });
   
-    function showInContentWindow(text) {
+    function showInContentWindow(text2) {
       var sidediv = document.getElementById('capture');
-      sidediv.innerHTML = text;
+      sidediv.innerHTML = text2;
     }
   }
