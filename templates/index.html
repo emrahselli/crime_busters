@@ -9,16 +9,31 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+        <h1>Crime vs Socioeconomic Status in Chicago</h1>
+        <p>Use the interactive charts below to explore the crime rates, income and unemployment rates in Chicago.
+            The data provided by ward. The wards are ordered by their average income rates in all charts.
+            The circle sizes in the bottom chart represent the crime incidents.
+            While there is a negative correlation between income and unemploymet rates, we did not observe any strong
+            correlation between the number of crime incidents and Socioeconomic status of the wards.
+        </p>
+        </div>
+    </div>
     <div id="bar"></div>
     <select id="selDataset" onchange="getData(this.value)">
-        <option value="income">Income Char</option>
-        <option value="unemployment">Unemployment Char</option>
-        <option value="crime">Crime Char</option>
+        <option value="income">Income Rates</option>
+        <option value="unemployment">Unemployment Ratios</option>
+        <option value="crime">Crime Incidents</option>
     </select>
     <div class="col-md-12">
         <div id="bubble"></div>
       </div>
+    </div>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <object type="text/html" width="1200" height="600" data="http://www.doularabia.com">
+    </object>
 
 </body>
 </html>
