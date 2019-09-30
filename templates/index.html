@@ -7,6 +7,7 @@
     <title>Crime_vs_Economy</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -16,8 +17,9 @@
         <p>Use the interactive charts below to explore the crime rates, income and unemployment rates in Chicago.
             The data provided by ward. The wards are ordered by their average income rates in all charts.
             The circle sizes in the bottom chart represent the crime incidents.
+            Use the map below to investigate the number of crime types for each ward by clicking on place markers.
             While there is a negative correlation between income and unemploymet rates, we did not observe any strong
-            correlation between the number of crime incidents and Socioeconomic status of the wards.
+            correlation between the total number of crime incidents and Socioeconomic status of the wards.
         </p>
         </div>
     </div>
@@ -30,10 +32,13 @@
     <div class="col-md-12">
         <div id="bubble"></div>
       </div>
+    <div id="map"></div>
+    <div id="capture"></div>
     </div>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-    <object type="text/html" width="1200" height="600" data="http://www.doularabia.com">
-    </object>
-
+    <script src="/static/js/map.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKuezGqP4GBJWAN1kpCimTTyM_Ugd2gIw&callback=initMap">
+    </script>
 </body>
 </html>
