@@ -1,0 +1,1 @@
+web: gunicorn newfolder.app:app
